@@ -15,8 +15,6 @@
 
         <!--Settings List, left hand panel-->
         <Panel id="StartGameCountdownTimer">
-            <Image id="TimerBg" src="file://{images}/status_icons/timer_background.psd" />
-            <Image id="TimerRing" src="file://{images}/status_icons/timer_ring.psd" />
             <Label id="TeamSelectTimer" text="#custom_game_team_select_timer" />
             <Panel id="TimerLabelBox" >
             <Label id="TimerLabelAutoStart" text="#custom_game_team_select_auto_start" />
@@ -28,7 +26,6 @@
             <Panel id="TeamsListGroup" >
             <Panel id="TeamListHeader">
                 <Label id="TeamListHeaderLabel" text="#custom_game_team_select" />
-                <Image id="TeamListLockedIcon" src="file://{images}/control_icons/lock_small.png" />
             </Panel>
             <Panel id="TeamsListRoot" />
             <Panel id="OptionList">
@@ -45,9 +42,6 @@
                 </Panel>
 
                 </Panel>
-            </Panel>
-            <Panel id="Discord" class="AdBanner">
-                <Image id="DiscordImage" class="AdImage" src="file://{images}/custom_game/game_info/Discord.png" onactivate="ExternalBrowserGoToURL('https://discord.gg/pmMnfdA');" onload="DOTAShowTextTooltip('#Ad_updated')" onmouseover="DOTAShowTextTooltip('#Ad_updated')" onmouseout="DOTAHideTextTooltip()"/>
             </Panel>
             </Panel>
         </Panel>
