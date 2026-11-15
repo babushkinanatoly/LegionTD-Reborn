@@ -7,8 +7,8 @@
    - `dota 2 beta\game\dota_addons\legion_td` → `репо\game\dota_addons\legion_td`
    - `dota 2 beta\content\dota_addons\legion_td` → `репо\content\dota_addons\legion_td`
    Если в Dota уже была настоящая папка `legion_td` — она переименуется в `legion_td_backup_<дата>`.
-4. Двойной клик `tools\launch.bat` — откроется Workshop Tools с аддоном legion_td.
-   (Вручную: Steam → Dota 2 → «Launch Dota 2 - Tools» → выбрать legion_td.)
+4. Steam → правой кнопкой по Dota 2 → «Launch Dota 2 - Tools» → выбрать `legion_td` → Launch Tools.
+   (`tools\launch.bat` пока не работает: ошибка modtools, error 126.)
 5. Открыть консоль (клавиша `` ` `` или окно VConsole) и ввести:
    ```
    dota_launch_custom_game legion_td legion_td_4v4

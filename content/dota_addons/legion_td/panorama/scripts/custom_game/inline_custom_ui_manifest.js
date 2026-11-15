@@ -1,0 +1,68 @@
+// Moved out of layout/custom_game/custom_ui_manifest.xml: inline <script> tags are no longer supported.
+
+GameUI.CustomUIConfig().Creator = [ "76561198027964324" ];
+GameUI.CustomUIConfig().ActiveDevelopers = [ "76561198027964324", "76561198249367546" ];
+GameUI.CustomUIConfig().InactiveDevelopers = [ "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120", "76561198030851434" ];
+
+GameUI.CustomUIConfig().multiteam_top_scoreboard =
+{
+    reorder_team_scores: true,
+    LeftInjectXMLFile: "file://{resources}/layout/custom_game/legion_round_left.xml",
+};
+
+
+GameUI.CustomUIConfig().team_logo_xml = "file://{resources}/layout/custom_game/overthrow_team_icon.xml";
+GameUI.CustomUIConfig().team_logo_large_xml = "file://{resources}/layout/custom_game/overthrow_team_icon_large.xml";
+
+GameUI.CustomUIConfig().team_icons = {}
+GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_GOODGUYS] = "file://{images}/custom_game/team_icons/team_icon_tiger_01.png";
+GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_BADGUYS ] = "file://{images}/custom_game/team_icons/team_icon_ram_01.png";
+
+GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_TIMEOFDAY, false );
+GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_HEROES, true );
+GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_FLYOUT_SCOREBOARD, false );
+
+GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_HERO_SELECTION_TEAMS, true );
+GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_HERO_SELECTION_GAME_NAME, false );
+GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_HERO_SELECTION_CLOCK, true );
+
+GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_QUICKBUY	, false );
+GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_SHOP, false );
+GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_COURIER, false );
+GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_ACTION_MINIMAP, true );
+GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_HEROES, false );
+
+GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_ITEMS, true );
+
+GameUI.CustomUIConfig().team_colors = {}
+GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_GOODGUYS] = "#38902d";
+GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_BADGUYS ] = "#994a31";
+
+var newUI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
+var NoGlyphAndRadar = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("minimap_container");
+var NoTPScrollUI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
+var NoKDA = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("stackable_side_panels");
+var NoNewRightPanel = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
+var NoNeutralItemSlot = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
+var newUITOP = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("MenuButtons");
+var NoAghanimPanel = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block").FindChildTraverse("AbilitiesAndStatBranch");
+
+newUITOP.FindChildTraverse("DashboardButton").style.visibility = "collapse";
+newUITOP.FindChildTraverse("ToggleScoreboardButton").style.visibility = "collapse";
+newUITOP.FindChildTraverse("SettingsButton").style.visibility = "collapse";
+newUI.FindChildTraverse("StatBranch").style.visibility = "collapse";
+NoGlyphAndRadar.FindChildTraverse("GlyphScanContainer").style.visibility = "collapse";
+NoTPScrollUI.FindChildTraverse("inventory_tpscroll_container").style.visibility = "collapse";
+NoKDA.FindChildTraverse("quickstats").style.visibility = "collapse";
+NoKDA.FindChildTraverse("PlusStatus").style.visibility = "collapse";
+NoNewRightPanel.FindChildTraverse("right_flare").style.visibility = "collapse";
+NoNeutralItemSlot.FindChildTraverse("inventory_neutral_slot_container").style.visibility = "collapse";
+NoAghanimPanel.FindChildTraverse("AghsStatusContainer").style.visibility = "collapse";
+$.Msg(DotaDefaultUIElement_t);
+GameUI.CustomUIConfig().dotaUi = newUI;
+
+GameUI.CustomUIConfig().multiteam_top_scoreboard =
+{
+    reorder_team_scores: false,
+    TeamOverlayXMLFile: "file://{resources}/layout/custom_game/overthrow_scoreboard_team_overlay.xml"
+};

@@ -707,8 +707,8 @@ function Game:OrderFilter(keys)
                 return true
             end
         end
-        local tangoCost = ability:GetSpecialValueFor("tango_cost")
-        local foodCost = ability:GetSpecialValueFor("food_cost")
+        local tangoCost = GetLegionSpecial(ability, "tango_cost")
+        local foodCost = GetLegionSpecial(ability, "food_cost")
         --Does it have FoodCost?
         if foodCost then
             if not player then

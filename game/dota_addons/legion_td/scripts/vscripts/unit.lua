@@ -4,6 +4,32 @@ end
 
 Unit.UnitTable = dofile("config_unit")
 
+-- Reads an ability special value. Newer Dota builds can return 0 from
+-- GetSpecialValueFor for old datadriven "AbilitySpecial" blocks, so fall back
+-- to the raw KV loaded in Game.AbilityKV.
+function GetLegionSpecial(ability, key)
+    local value = ability:GetSpecialValueFor(key)
+    if value ~= nil and value ~= 0 then
+        return value
+    end
+    local kv = Game.AbilityKV and Game.AbilityKV[ability:GetAbilityName()]
+    if kv then
+        for _, block in pairs({kv.AbilitySpecial or {}, kv.AbilityValues or {}}) do
+            for k, entry in pairs(block) do
+                if type(entry) == "table" and entry[key] ~= nil then
+                    return tonumber(entry[key]) or 0
+                elseif k == key then
+                    return tonumber(entry) or 0
+                end
+            end
+        end
+    end
+    if key == "unitID" then
+        print("[LegionSpecial] " .. ability:GetAbilityName() .. ": no value for '" .. key .. "' (got " .. tostring(value) .. ")")
+    end
+    return value or 0
+end
+
 function Unit:GetUnitNameByID(id)
     return self.UnitTable[id]
 end
@@ -144,23 +170,23 @@ function UnitSpawn(event)
     end
     local unit =
         Unit.new(
-        Unit:GetUnitNameByID(event.ability:GetSpecialValueFor("unitID")),
+        Unit:GetUnitNameByID(GetLegionSpecial(event.ability, "unitID")),
         event.unit:GetCursorPosition(),
         event.caster,
-        event.ability:GetSpecialValueFor("food_cost"),
+        GetLegionSpecial(event.ability, "food_cost"),
         event.ability:GetGoldCost(event.ability:GetLevel())
     )
     event.caster.player:RefreshPlayerInfo()
 end
 
 function UpgradeUnit(event)
-    local id = event.ability:GetSpecialValueFor("unitID")
+    local id = GetLegionSpecial(event.ability, "unitID")
     playerid = event.unit:GetPlayerOwnerID()
     local newclass = Unit:GetUnitNameByID(id)
     event.caster.unit.npcclass = newclass
     event.caster.unit.player:BuildUnit(newclass)
     event.caster.unit:Respawn()
-    event.caster.unit.foodCost = event.caster.unit.foodCost + event.ability:GetSpecialValueFor("food_cost")
+    event.caster.unit.foodCost = event.caster.unit.foodCost + GetLegionSpecial(event.ability, "food_cost")
     event.caster.unit.goldCost = event.caster.unit.goldCost + event.ability:GetGoldCost(event.ability:GetLevel())
     PlayerResource:NewSelection(playerid, event.caster.unit.npc)
 end
