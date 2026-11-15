@@ -1,0 +1,3 @@
+﻿unit,hp,armor,magic_resist,dmg_min,dmg_max,attack_rate,range,attack_type,defend_type,move_speed,model,model_scale,abilities
+dire_king,5000,5,0,69,81,0.8,615,boss,boss,0,models/heroes/doom/doom.vmdl,2,being_dire_king king_split_shot
+radiant_king,5000,5,0,69,81,0.8,615,boss,boss,0,models/heroes/omniknight/omniknight.vmdl,2.2,being_radiant_king king_split_shot

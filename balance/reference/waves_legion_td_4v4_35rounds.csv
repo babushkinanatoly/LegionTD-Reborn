@@ -1,0 +1,44 @@
+﻿round,type,title,wave_bounty,unit,count,unit_bounty,hp,armor,magic_resist,dmg_min,dmg_max,attack_rate,range,attack_type,defend_type,move_speed,model,model_scale,abilities
+1,wave,Duskie (Normal / Light),15,unit_donkey,12,5,40,0,0,3,4,1.55,90,normal,light,300,models/creeps/lane_creeps/creep_radiant_melee/radiant_melee.vmdl,0.9,
+2,wave,Butch (Arcane / Light),16,unit_unicorn,15,6,55,0,0,4,5,1.1,90,arcane,light,300,models/creeps/lane_creeps/creep_radiant_melee/radiant_melee_mega.vmdl,0.9,
+3,wave,Space Cow (Normal / Heavy),17,unit_space_cow,15,6,70,1,0,7,7,1.25,450,normal,heavy,300,models/items/enigma/eidolon/tentacular_conqueror_tentacular_conqueror_eidolons/tentacular_conqueror_tentacular_conqueror_eidolons.vmdl,1,
+4,wave,Gatling Guy (Arcane / Light),18,unit_gatling_sniper,12,6,85,2,0,3,3,0.35,500,arcane,light,300,models/heroes/sniper/sniper.vmdl,0.6,
+5,wave,Fluffy Thing (Pierce / Medium),19,unit_lightning_ball,12,6,130,3,0,8,10,0.7,90,pierce,medium,330,models/heroes/lycan/lycan_wolf.vmdl,0.6,
+6,duel,Duel,5,,,,,,,,,,,,,,,,
+7,wave,Predator (Pierce / Medium),20,unit_predator,12,6,160,4,0,12,14,0.75,90,pierce,medium,300,models/heroes/nerubian_assassin/nerubian_assassin.vmdl,0.6,
+8,wave,Assassin (Pierce / Light),22,unit_assassins,12,5,170,0,0,17,18,0.78,90,pierce,light,300,models/heroes/rikimaru/rikimaru.vmdl,1,assassin_backstab
+9,wave,Hydra (Arcane / Medium),24,unit_hydra,11,6,205,3,0,10,12,1.4,400,arcane,medium,300,models/heroes/medusa/medusa.vmdl,0.6,hydra_splitshot
+10,wave,Lifestealer  (Normal / Light),26,unit_not_lifestealer,12,6,240,4,20,18,20,0.85,90,normal,light,300,models/heroes/life_stealer/life_stealer.vmdl,0.6,skeleton_king_vampiric_aura
+11,wave,Fatty,28,unit_fatty,1,51,3500,10,100,90,110,0.9,300,boss,boss,300,models/heroes/pudge/pudge.vmdl,2.5,waveboss_repel waveboss_attackspeed
+12,duel,Duel,15,,,,,,,,,,,,,,,,
+13,wave,Little Fishy (Normal / Medium),30,unit_little_fishy,18,6,250,2,0,15,18,0.71,90,normal,medium,450,models/heroes/slark/slark.vmdl,0.6,
+14,wave,Zombie (Arcane / Light),32,unit_zombie,15,5,300,4,0,14,16,0.5,250,arcane,light,300,models/heroes/undying/undying_minion.vmdl,0.8,
+15,wave,Tidehunter (Normal / Heavy),34,unit_tidehunter,14,6,350,12,0,21,26,0.8,90,normal,heavy,300,models/heroes/tidehunter/tidehunter.vmdl,0.7,tidehunter_kraken_shell
+16,wave,Abaddon (Normal / Heavy),36,unit_abaddon,7,8,470,0,0,30,35,0.87,90,normal,heavy,300,models/heroes/abaddon/abaddon.vmdl,0.7,abaddon_borrowed_time
+17,wave,Enchantress (Normal / Light),38,unit_enchantress,12,5,340,3,0,21,22,0.46,250,normal,light,300,models/heroes/enchantress/enchantress.vmdl,0.7,enchantress_untouchable_lua
+18,duel,Duel,25,,,,,,,,,,,,,,,,
+19,wave,Bomberman (Arcane / Medium),70,unit_techies,15,3,230,3,0,0,0,0,0,arcane,medium,320,models/heroes/techies/techies.vmdl,0.7,techies_suicide_datadriven
+20,wave,The Random Guy (Normal / Heavy),45,unit_chaos,13,6,400,4,0,27,68,0.62,90,normal,heavy,300,models/heroes/chaos_knight/chaos_knight.vmdl,0.7,chaos_knight_chaos_strike
+21,wave,Phantom (Pierce / Medium),46,unit_phantom,15,5,475,5,30,36,40,0.55,90,pierce,medium,300,models/heroes/phantom_assassin/phantom_assassin.vmdl,0.7,phantom_assassin_blur
+22,wave,Bloody Berserker (Pierce / Medium),47,unit_necro_replacement,12,5,600,10,30,56,65,0.62,128,pierce,medium,300,models/heroes/blood_seeker/blood_seeker.vmdl,0.7,bloodseeker_bloodrage
+23,wave,King,50,unit_king,1,51,2200,18,100,285,300,0.85,125,boss,boss,300,models/heroes/wraith_king/wraith_king.vmdl,2,king_reincarnation waveboss_repel waveboss_attackspeed
+24,duel,Duel,35,,,,,,,,,,,,,,,,
+25,wave,Templer (Arcane / Light),52,unit_templer,12,6,450,4,25,38,42,0.82,200,arcane,light,380,models/heroes/lanaya/lanaya.vmdl,0.6,templar_assassin_psi_blades
+26,wave,Earthspirit (Normal / Light),54,unit_earthspirit,15,5,500,4,0,91,96,1.1,90,normal,light,300,models/heroes/earth_spirit/earth_spirit.vmdl,0.6,
+27,wave,Pirate (Normal / Medium),56,unit_kunkka,10,6,750,4,0,26,28,0.35,90,normal,medium,300,models/heroes/kunkka/kunkka.vmdl,0.6,kunkka_tidebringer
+28,wave,Berserker (Pierce / Light),58,unit_huskar,12,6,750,6,0,73,83,0.8,300,pierce,light,300,models/heroes/huskar/huskar.vmdl,0.6,huskar_burning_spear huskar_berserkers_blood
+29,wave,Tiny (Normal / Heavy),60,unit_tiny,15,5,600,10,20,88,94,1,100,normal,heavy,300,models/heroes/meepo/meepo.vmdl,0.9,meepo_geostrike
+30,duel,Duel,50,,,,,,,,,,,,,,,,
+31,wave,Drunken (Normal / Medium),62,unit_drunken,14,7,800,9,25,79,91,0.6,90,normal,medium,295,models/heroes/brewmaster/brewmaster.vmdl,0.6,
+32,wave,Deathprophet (Arcane / Light),64,unit_deathprophet,3,25,4000,15,30,140,165,0.6,400,arcane,light,300,models/heroes/death_prophet/death_prophet.vmdl,0.6,death_prophet_exorcism
+33,wave,The Grand Magus (Arcane / Light),66,unit_rubick,15,5,880,3,15,85,98,0.72,400,arcane,light,300,models/heroes/rubick/rubick.vmdl,0.6,ogre_magi_ignite
+34,wave,Ogre (Arcane / Heavy),68,unit_ogre,12,5,1080,12,35,153,178,0.7,90,arcane,heavy,300,models/heroes/ogre_magi/ogre_magi.vmdl,0.6,ogre_magi_bloodlust
+35,wave,Dragonlord,70,unit_dragon,1,70,6000,25,100,401,445,0.8,125,boss,boss,300,models/heroes/dragon_knight/dragon_knight.vmdl,2,dragon_knight_elder_dragon_form waveboss_repel waveboss_attackspeed
+36,duel,Duel,150,,,,,,,,,,,,,,,,
+37,wave,The OP Guy at the end,72,unit_chen,12,6,1200,10,10,125,138,0.7,400,boss,boss,300,models/heroes/chen/chen.vmdl,0.6,
+38,wave,wavetitle_ancienthulk,74,unit_ancienthulk,12,7,1300,13,30,130,143,0.9,100,normal,heavy,300,models/creeps/lane_creeps/creep_dire_hulk/creep_dire_diretide_ancient_hulk.vmdl,0.8,ancienthulk_rabid
+39,wave,wavetitle_skeleton,76,unit_skeleton,15,7,1250,11,30,128,141,0.7,100,normal,normal,300,models/creeps/neutral_creeps/n_creep_troll_skeleton/n_creep_skeleton_melee.vmdl,1,
+40,wave,wavetitle_dragonspawn,78,unit_dragonspawn,5,23,3200,13,40,150,171,0.4,100,normal,heavy,300,models/creeps/neutral_creeps/n_creep_dragonspawn_a/n_creep_dragonspawn_a.vmdl,1,dragonspawn_living_armor
+41,wave,wavetitle_ursa,80,unit_ursa,13,9,1500,20,15,110,133,0.48,100,normal,heavy,300,models/heroes/ursa/ursa.vmdl,1,ursa_fury_swipes_datadriven
+42,duel,Duel,200,,,,,,,,,,,,,,,,
+43,wave,wavetitle_golemwarrior,82,unit_golemwarrior,10,12,1750,10,30,135,145,0.6,100,boss,boss,300,models/items/warlock/golem/mystery_of_the_lost_ores_golem/mystery_of_the_lost_ores_golem.vmdl,0.7,

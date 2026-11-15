@@ -21,6 +21,9 @@
 - Форк n-gao/LegionTD-Reborn, лицензия MIT (код). Лицензия ассетов (карта, текстуры, модели) НЕ проверена.
 - Последний апстрим-коммит — ноябрь 2022.
 - Аддон называется `legion_td`, карта `legion_td_4v4`.
+- Workshop (тестовый, Friends only): id 3840487463 — https://steamcommunity.com/sharedfiles/filedetails/?id=3840487463
+  Новые загрузки проходят модерацию Steam (часы–дни) → Workshop только для редких тестовых сборок, ежедневные тесты — в Tools.
+- Справочные таблицы текущих данных: `balance/reference/` (см. `balance/README.md`).
 
 ## Структура репо
 - `game/dota_addons/legion_td/` — то, что грузит игра:
