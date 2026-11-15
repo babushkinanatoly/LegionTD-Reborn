@@ -59,3 +59,5 @@
   Нужно перекомпилировать `.vmap` в Hammer (после первого успешного запуска).
 - `tools/launch.bat` (прямой запуск dota2.exe -tools) падает с «Unable to load module modtools, error 126».
   Через Steam → «Launch Dota 2 - Tools» работает. Переделать скрипт на запуск через Steam.
+- Лобби (team_select): после починки компиляции пропал таймер вверху и кнопка старта не уменьшает время.
+  Нужен скриншот лобби. Возможно, пропали картинки `{images}/status_icons/timer_*.psd` из Dota.

@@ -17,8 +17,8 @@
 
         "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
         "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-        "AttackDamageMin"       "52.5"
-        "AttackDamageMax"       "57.5"
+        "AttackDamageMin"       "53"
+        "AttackDamageMax"       "58"
         "AttackRate"            "0.5"
         "AttackAnimationPoint"  "0.2"
         "AttackAcquisitionRange" "850"
@@ -26,8 +26,8 @@
         "ProjectileModel"       "particles/econ/items/necrolyte/necronub_base_attack/necrolyte_base_attack_ka.vpcf"
         "ProjectileSpeed"       "600"
 
-        "BountyGoldMin"         "6.0"
-        "BountyGoldMax"         "6.0"
+        "BountyGoldMin"         "6"
+        "BountyGoldMax"         "6"
 
         "BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
         "CollisionSize"                    "50"
